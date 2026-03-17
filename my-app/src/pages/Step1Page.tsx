@@ -4,6 +4,14 @@ import { useNavigate } from "react-router-dom";
 import { Layout } from "../components/Layout";
 import { useLoanStore } from "../app/store";
 
+/*
+  React Hook Form выбран для удобной валидации и уменьшения количества
+  ручного кода вокруг форм.
+
+  Zustand выбран для хранения общих данных всех шагов без prop drilling.
+
+*/
+
 type Step1Values = {
     phone: string;
     firstName: string;

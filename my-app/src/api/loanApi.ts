@@ -1,13 +1,6 @@
 import type { AddProductResponse } from "../types/form";
 
-/*
-  React Hook Form выбран для удобной валидации и уменьшения количества
-  ручного кода вокруг форм.
 
-  Zustand выбран для хранения общих данных всех шагов без prop drilling.
-
-  react-input-mask выбран для маски телефона по ТЗ.
-*/
 
 export async function fetchWorkplaces(): Promise<string[]> {
     const response = await fetch("https://dummyjson.com/products/category-list");
